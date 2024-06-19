@@ -28,4 +28,23 @@ class Entry:
             self.entry_type = Type.STRING
             self.value_string = input_str
         
+    def get_type(self):
+        return self.entry_type
     
+    def get_num(self):
+        if self.entry_type != Type.NUMBER:
+            raise BadTypeException("Bad Type: The 'Float' value doesn't exist for this item")
+        return self.num
+    
+    def get_sign(self):
+        if self.entry_type != Type.SYMBOL:
+            raise BadTypeException("Bad Type: The 'Sign' value doesn't exist for this item")
+        return self.sign
+    
+    def get_string(self):
+        if self.entry_type != Type.STRING:
+            raise BadTypeException("Bad Type: The 'String' value doesn't exist for this item")
+        return self.input
+    
+    def __eq__(self, other):
+        if self.get_type
