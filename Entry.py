@@ -47,4 +47,24 @@ class Entry:
         return self.input
     
     def __eq__(self, other):
-        if self.get_type
+        if not isinstance(other, Entry):
+            return False
+        elif self.type == other.type:
+            if self.type == Type.NUMBER:
+                return self.num == other.num
+            elif self.type == Type.SYMBOL:
+                return self.sign == other.sign
+            elif self.type == Type.STRING:
+                return self.string == other.string
+        return False
+    
+    def __hash__(self):
+        prime = 31
+        result = 0
+        if self.type == Type.NUMBER:
+            result = prime + hash(self.num)
+        elif self.type == Type.SYMBOL:
+            result = prime + hash(self.sign)
+        elif self.type == Type.STRING:
+            result = prime + hash(self.input)
+        return result
