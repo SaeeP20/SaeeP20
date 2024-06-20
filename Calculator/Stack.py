@@ -1,4 +1,4 @@
-import EmptyStackException
+from CustomExceptions import EmptyStackException
 import Entry
 
 class Stack(Entry):
