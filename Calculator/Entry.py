@@ -18,9 +18,8 @@ class Entry:
             self.value_string = str(num)
         elif isinstance(sign, Symbol):
             self.sign = sign
-            if sign == Symbol.INVALID:
-                raise 
-            self.entry_type = Type.SYMBOL    
+            if sign != Symbol.INVALID:
+                self.entry_type = Type.SYMBOL
             self.value_string = str(sign)
         elif isinstance(input_str, str):
             self.input = input
@@ -43,19 +42,10 @@ class Entry:
             raise BadTypeException("Bad Type: The 'String' value doesn't exist for this item")
         return self.input
     
-
     # Function to determine if two Entries are equal
     def __eq__(self, other):
-        if not isinstance(other, Entry):
-            return False
-        elif self.type == other.type:
-            if self.type == Type.NUMBER:
-                return self.num == other.num
-            elif self.type == Type.SYMBOL:
-                return self.sign == other.sign
-            elif self.type == Type.STRING:
-                return self.string == other.string
-        return False
+        if isinstance(other, Entry):
+            return self.value_string == other.value_string
     
     # Assigns a unique hashcode to each Entry
     def __hash__(self):
