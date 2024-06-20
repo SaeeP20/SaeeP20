@@ -13,5 +13,5 @@ class Stack(Entry):
 
     def pop(self):
         if self.is_empty():
-            return EmptyStackException
+            return EmptyStackException("There is nothing to pop")
         return self.items.remove[self.sizeof - 1]
