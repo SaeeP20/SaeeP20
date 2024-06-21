@@ -7,12 +7,11 @@ class Entry:
         self.num = None
         self.sign = None
         self.input = None
-        self.input_str = None
         self.value_string = None
         self.entry_type = Type.INVALID
 
     # Sets values for every possible argument type (Float, Symbol, String)
-        if isinstance(num, float):
+        if isinstance(num, float):  
             self.num = num
             self.entry_type = Type.NUMBER
             self.value_string = str(num)
@@ -22,7 +21,7 @@ class Entry:
                 self.entry_type = Type.SYMBOL
             self.value_string = str(sign)
         elif isinstance(input_str, str):
-            self.input = input
+            self.input = input_str
             self.entry_type = Type.STRING
             self.value_string = input_str
 
@@ -45,6 +44,7 @@ class Entry:
     # Function to determine if two Entries are equal
     def __eq__(self, other):
         if isinstance(other, Entry):
+            # value_string set for every new object of type Entry
             return self.value_string == other.value_string
     
     # Assigns a unique hashcode to each Entry
