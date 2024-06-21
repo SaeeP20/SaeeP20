@@ -1,7 +1,7 @@
 from CustomExceptions import EmptyStackException
 import Entry
 
-class Stack(Entry):
+class Stack:
     # Constructor for new stack
     def __init__(self):
         self.items = []
