@@ -1,0 +1,18 @@
+import Entry
+from Stacks import Stack
+from CustomExceptions import BadTypeException
+
+class RevPolishCalc:
+    
+    # Constructor
+    def __init__(self):
+        self.base_stack = Stack()
+
+    def is_operator(op):
+        return op in "+-*/"
+    
+    def is_numeric(num):
+        try:
+            return float(num)
+        except BadTypeException:
+            return False
