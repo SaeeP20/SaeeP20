@@ -8,15 +8,21 @@ class RevPolishCalc:
     def __init__(self):
         self.base_stack = Stack()
 
+    # Returns a true if argument is a valid operator
     def is_operator(op):
-        return op in "+-*/"
+        try:
+            return op in "+-*/"
+        except BadTypeException("Not a valid operator"):
+            return False
     
+    # Returns true if argument is a valid Float
     def is_numeric(num):
         try:
             return float(num)
         except BadTypeException:
             return False
-        
+
+    # Evaluates the expression in reverse-polish notation (numbers then operators)    
     def evaluate(self, expr):
         tokens = expr.split()
         for token in tokens:
@@ -38,7 +44,5 @@ class RevPolishCalc:
                 elif token == "/":
                     new_token = Entry(num_one / num_two)
                     self.base_stack.push(new_token)
-                else:
-                    raise InvalidExpression("Not a valid operator")
         return self.base_stack.pop().get_num()
     
