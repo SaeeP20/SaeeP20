@@ -1,6 +1,6 @@
 import Entry
 from Stacks import Stack
-from CustomExceptions import BadTypeException
+from CustomExceptions import BadTypeException, InvalidExpression
 
 class RevPolishCalc:
     
@@ -16,3 +16,29 @@ class RevPolishCalc:
             return float(num)
         except BadTypeException:
             return False
+        
+    def evaluate(self, expr):
+        tokens = expr.split()
+        for token in tokens:
+            if self.is_numeric(token):
+                new_token = Entry(token)
+                self.base_stack.push(new_token)
+            elif self.is_operator(token) and self.base_stack.sizeof() != 0:
+                num_two = self.base_stack.pop().get_num()
+                num_one = self.base_stack.pop().get_num()
+                if token == "+":
+                    new_token = Entry(num_one + num_two)
+                    self.base_stack.push(new_token)
+                elif token == "-":
+                    new_token = Entry(num_one - num_two)
+                    self.base_stack.push(new_token)
+                elif token == "*":
+                    new_token = Entry(num_one * num_two)
+                    self.base_stack.push(new_token)
+                elif token == "/":
+                    new_token = Entry(num_one / num_two)
+                    self.base_stack.push(new_token)
+                else:
+                    raise InvalidExpression("Not a valid operator")
+        return self.base_stack.pop().get_num()
+    
