@@ -5,5 +5,10 @@ def get_word():
     with open("words.txt") as words:
         word_list = words.read().split()
     # Chooses a random word as hangman word
-    rand_word = random.choice(word_list)
+    return random.choice(word_list)
+
+def get_hangman(tries):
+    stage = []
+
+    return stage[tries - 1]
 
