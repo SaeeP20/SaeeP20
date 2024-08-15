@@ -8,7 +8,52 @@ def get_word():
     return random.choice(word_list)
 
 def get_hangman(tries):
-    stage = []
+    stage = [    
+        """
+            |
+            |
+            |
+            |
+            | """,
+        """
+            |
+            |
+            |
+            |
+            |
+        ====== """,
+        """
+        -----
+            |
+            |
+            |
+            |
+            |
+        ====== """,
+        """
+        -----
+           \|
+            |
+            |
+            |
+            |
+        ====== """,
+        """
+        -----
+        |  \|
+            |
+            |
+            |
+            |
+        ======""",
+        """
+        -----
+        |  \|
+        O   |
+            |
+            |
+            |
+        ======"""]
     return stage[tries - 1]
 
 def guesses(guess):
@@ -17,3 +62,5 @@ def guesses(guess):
         guess_list.append(guess)
     else:
         print("You have already guessed this letter!")
+
+def play_game():
