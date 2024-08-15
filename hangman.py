@@ -9,6 +9,11 @@ def get_word():
 
 def get_hangman(tries):
     stage = []
-
     return stage[tries - 1]
 
+def guesses(guess):
+    guess_list = []
+    if guess not in guess_list:
+        guess_list.append(guess)
+    else:
+        print("You have already guessed this letter!")
