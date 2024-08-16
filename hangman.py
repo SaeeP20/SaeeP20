@@ -64,3 +64,11 @@ def guesses(guess):
         print("You have already guessed this letter!")
 
 def play_game():
+    word = get_word()
+    guess = input("Enter your guess: ")
+    cor_guesses = []
+    incor_guesses = []
+    if len(guess) != 1:
+        print("Please enter a valid input.")
+    else:
+        guesses(guess)
