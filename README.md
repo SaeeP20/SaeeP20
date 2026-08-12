@@ -16,7 +16,7 @@ Automated Python pipeline that turns retail transaction data into a weekly busin
 
 **Stack:** Python, Pandas, scikit-learn, openpyxl, Power BI API
 
-🔗 [Repository](#)
+🔗 [Repository](https://github.com/SaeeP20/AI-Analyst-Agent.git)
 
 ### 🧬 GA Imaging Scheduler (Final Year Project)
 Genetic Algorithm system for optimising hospital imaging schedules.
@@ -26,7 +26,7 @@ Genetic Algorithm system for optimising hospital imaging schedules.
 
 **Stack:** Python, NumPy, Pandas, Matplotlib
 
-🔗 [Repository](https://github.com/SaeeP20/AI-Analyst-Agent.git)
+🔗 [Repository](https://github.com/SaeeP20/FYP-MedScan-GA-Scheduler.git)
 
 ### ⛅ Weather App
 Node.js app pulling live conditions from the OpenWeather API, with sub-300ms response times.
