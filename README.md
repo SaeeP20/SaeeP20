@@ -44,6 +44,10 @@ Node.js app pulling live conditions from the OpenWeather API, with sub-300ms res
 - Analysed 1,000+ customer journeys
 - Presented findings to senior stakeholders.
 
+**Grasp Study** — Closed Beta Participant *(2024–2025)*
+- Structured feedback on 200+ AI model outputs
+- Contributing to engagement strategies projected to improve retention by 10–15%
+
 ---
 
 ## 🛠️ Skills
