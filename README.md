@@ -40,14 +40,18 @@ Node.js app pulling live conditions from the OpenWeather API, with sub-300ms res
 ## 💼 Experience
 
 **Santander UK** — Tech and Data Work Experience *(2025)*
-AI and compliance research across 5 banking functions; analysed 1,000+ customer journeys; presented findings to senior stakeholders.
+- AI and compliance research across 5 banking functions
+- Analysed 1,000+ customer journeys
+- Presented findings to senior stakeholders.
 
 ---
 
 ## 🛠️ Skills
 
 **Languages:** Python, Java, JavaScript, SQL, C
+
 **AI/Data:** Scikit-Learn, Pandas, NumPy, Keras, Matplotlib
+
 **Tools:** Git, Power BI, Openpyxl, VS Code
 
 ---
