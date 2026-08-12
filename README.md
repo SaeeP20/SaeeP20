@@ -26,14 +26,14 @@ Genetic Algorithm system for optimising hospital imaging schedules.
 
 **Stack:** Python, NumPy, Pandas, Matplotlib
 
-🔗 [Repository](#)
+🔗 [Repository](https://github.com/SaeeP20/AI-Analyst-Agent.git)
 
 ### ⛅ Weather App
 Node.js app pulling live conditions from the OpenWeather API, with sub-300ms response times.
 
 **Stack:** Node.js, OpenWeather API
 
-🔗 [Repository](#)
+🔗 [Repository](https://github.com/SaeeP20/Weather-App.git)
 
 ---
 
