@@ -1,6 +1,6 @@
 # Hi, I'm Saee Pujari 👋
 
-AI-focused Computer Science student (MSci Artificial Intelligence, Royal Holloway University of London) building AI/ML systems — from predictive models to automated data pipelines.
+AI-focused Computer Science graduate (MSci Artificial Intelligence, Royal Holloway University of London) building AI/ML systems — from predictive models to automated data pipelines.
 
 📍 London, United Kingdom · 📧 saee.pp20@gmail.com
 
