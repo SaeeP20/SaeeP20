@@ -13,6 +13,7 @@ Automated Python pipeline that turns retail transaction data into a weekly busin
 - Random Forest **churn model** on RFM customer features
 - Rolling z-score **anomaly detection** for unusual revenue weeks
 - Auto-generates an HTML dashboard + Excel export and emails it out weekly
+- Cuts a roughly **2-day** manual analyst process to **under 3 minutes** per run.
 
 **Stack:** Python, Pandas, scikit-learn, openpyxl, Power BI API
 
